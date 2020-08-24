@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup/Login page</title>
+        <link href="form.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="form.js"></script>
+    </head>
+    <body>
+        <div>
+               <div id="sp" class="container">
+                <div class="form-group row">
+                    <div class="col-md-10">
+                        <a href="#sp" onclick="hidelog()"><button type="submit" class="btn align-self-center">Sign up</button></a>
+                        <a href="#log" onclick="hidesp()"><button type="submit" class="btn align-self-center">Login</button></a>
+                    </div>
+                </div>
+                   <form class="align-self-center"> 
+                        <div class="form-group row">
+                           <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                           <div class="col-xs-4 col-md-3">
+                               <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                           <label for="lastname" class="col-md-2 col-form-label">Last Name</label>
+                           <div class="col-md-3">
+                               <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                           </div>
+                        </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-md-2 col-form-label">Email</label>
+                        <div class="col-md-3">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="password" class="col-md-2 col-form-label">Password</label>
+                        <div class="col-md-3">
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="repsw" class="col-md-2 col-form-label">Confirm password</label>
+                        <div class="col-md-3">
+                            <input type="password" class="form-control" id="repsw" name="password" placeholder="Confirm Password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-10">
+                            <input type="submit" value="Sign up" class="btn s">
+                        </div>
+                    </div>
+                    <p>Already a member <a href="#log" onclick="hidesp()">Login</a> here!</p>
+                </form>
+            </div>
+       
+            
+            <div id="log" class="container" style="display: none;">
+                <div class="form-group row">
+                    <div class="col-md-10">
+                        <a href="#sp" onclick="hidelog()"><button type="submit" class="btn align-middle">Sign up</button></a>
+                        <a href="#log" onclick="hidesp()"><button type="submit" class="btn align-middle">Login</button></a>
+                    </div>
+                </div>
+                <form>
+                   <div class="form-group row">
+                       <label for="email" class="col-md-2 col-form-label">Email</label>
+                       <div class="col-md-3">
+                           <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                       </div>
+                    </div>
+                    <div class="form-group row">
+                       <label for="password" class="col-md-2 col-form-label">Password</label>
+                       <div class="col-md-3">
+                           <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                       </div>
+                   </div>
+                   <div class="form-group-row">
+                    <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
+                    <label for="loginkeeping">Keep me logged in</label>
+                   </div>
+                   <p><a href="#">Forgot Password</a></p>
+                   <div class="form-group row">
+                       <div class="col-md-10">
+                        <input type="submit" value="Cancle" class="btn s">
+                        <input type="submit" value="Login" class="btn s"> 
+                        </div>
+                   </div>
+                   <p>Don't have a account? <a href="#sp" onclick="hidelog()">Sign up</a> here!</p>
+                </form>
+            </div>
+       
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

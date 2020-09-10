@@ -1,0 +1,44 @@
+body {
+    padding: 50px;
+    background: #e0ffff;
+}
+@media only screen and (min-width:780px){
+    .left{
+        margin-left: 200px;
+    }
+    .bottom{
+        margin-left: 335px;
+        padding: 15px;
+    }
+}
+h2{
+    text-align: center;
+    padding-bottom: 10px;
+    color: red;
+}
+td{
+    border:1px solid ;
+    text-align:center ;
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+}
+td:empty{
+    visibility: hidden;
+}
+td:hover{
+    background-color:#778899;
+}
+@media only screen and (max-width:500px){
+    .left{
+        margin: 0;
+    }
+    .bottom{
+        margin-left: 98px;
+        padding-top: 15px;
+    }
+    .row{
+        overflow-x: scroll;
+    }
+   
+}

@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Survey form</title>
+        <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+        <link href="survey.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="first">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank You for taking your time to help us improve our platform.</p>
+            </div>
+            <div class="form">
+                <form id="survey-form">
+                    <label for="name" id="name-label">Name</label><br/>
+                    <input class="a" id="name" type="text" placeholder=" Your Name" required>
+                    <br/>
+                    <label for="email" id="email-label">Email</label><br/>
+                    <input class="a" id="email" type="email" placeholder=" Your Email" required>
+                    <br/>
+                    <label for="role">What is your current role</label><br/>
+                    <select id="dropdown" required>
+                    <option disabled selected>Select your role</option>
+                    <option>Prefer not to say</option>
+                    <option>Student</option>
+                    <option>Full time job</option>
+                    <option>Retired</option>
+                    </select> 
+                    <br/>
+                    <label for="number" id="number-label">How would you rate our course(1-5)</label><br/>
+                    <input class="a" id="number" type="number" min="1" max="5" placeholder=" 5" required>
+                    <br/>
+                    <label for="radio">How likely would you Recommend our course to others</label><br/>
+                    <span>
+                    <input name="radio" value="definitely" type="radio" checked/> Definitely</span></br>
+                    <span><input name="radio" value="maybe" type="radio"> May Be</span><br/>
+                    <span><input name="radio" value="sure" type="radio"> Sure</span>
+                    <br/>
+                    <label for="checkbox">Which others topics you would like to learn from us</label><br/>
+                    <span><input id="checkbox" type="checkbox" value="python"> Python</span><br/>
+                    <span><input id="checkbox" type="checkbox" value="java"> Java</span><br/>
+                    <span><input id="checkbox" type="checkbox" value="c"> C</span><br/>
+                    <span><input id="checkbox" type="checkbox" value="C++"> C++</span><br/>
+                    <span><input id="checkbox" type="checkbox" value="kotlin"> Kotlin</span>
+                    <br/>
+                    <label for="suggestion">Any other suggestions</label><br/>
+                    <textarea id="suggestion"></textarea>
+                    <br/>
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+body{
+    text-align: center;
+    font-size: 20px;
+    background: #9d9eec;
+  }
+  #title{
+    font-family: 'Sansita Swashed', cursive;
+    padding: 40px;
+  }
+  #img-div{
+    width: 50%;
+    
+    margin: auto;
+    padding: 10px;
+    box-shadow: 5px 5px 20px 20px black;
+    background: #f0ffff;
+    border-radius: 10px;
+    font-family: "Monospace", cursive;
+  }
+  #image{
+    max-width: 90%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+  }
+  #img-div:hover{
+    transform: scale(1.05);
+  }
+  #tribute-info{
+    padding: 50px;
+  }
+  .section{
+    font-family: 'Monospace', cursive;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px;
+    background: #f0ffff;
+  }
+  h2{
+    font-family: 'Sansita Swashed', cursive;
+  }
+  footer{
+    margin: 20px;
+  }
+  
+  

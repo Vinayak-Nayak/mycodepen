@@ -42,6 +42,18 @@ body{
   }
   footer{
     margin: 20px;
+    font-family: 'Monospace', cursive;
   }
+@media (max-width:480px){
+  body{
+    font-family: 'David Libre', cursive;
+  }
+  #img-div{
+    width: 80%;
+  }
+  #tribute-info{
+    padding:0px;
+  }
+}
   
   
